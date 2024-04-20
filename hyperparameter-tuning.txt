@@ -5,5 +5,11 @@
 # In scikit-learn's LinearRegression, we can choose between two types of regularization:
 # Ridge regression (Ridge) and Lasso regression (Lasso).
 # Both Ridge and Lasso have a hyperparameter called alpha, which controls the strength of regularization.
+# We define a list of alpha values to try for regularization.
+# We create a dictionary param_grid with the hyperparameters we want to tune.
+# We use GridSearchCV to perform grid search cross-validation over the specified hyperparameters (alpha values).
+# After fitting the grid search object to our data, we retrieve the best hyperparameters.
+# Finally, we create a new Ridge regression model with the best alpha value and evaluate its performance.
+# This process helps us find the optimal regularization strength for our linear regression model, potentially improving its accuracy.
 
 # Accuracy decreased to 8%.
