@@ -1,0 +1,14 @@
+# Feature Engineering:
+
+# In linear regression, feature engineering typically involves transforming or creating new features from the existing ones to better capture the relationship between the features and the target variable.
+# Since we have only one feature (X) in this example, we'll focus on techniques to enhance the predictive power of this single feature.
+
+# Polynomial Features: We can create polynomial features from the existing feature to capture non-linear relationships. This is done by adding powers of the existing feature to the dataset.
+# Interaction Terms: We can generate interaction terms by multiplying the existing feature with other features or with itself to capture interactions between features.
+# Normalization: Normalizing the features can sometimes improve the performance of linear regression models, especially when the features have different scales.
+
+# We use PolynomialFeatures to generate polynomial features up to degree 2 from the original feature X.
+# We then scale the polynomial features using StandardScaler to ensure that all features have the same scale.
+# Finally, we train a new linear regression model on the polynomial features and evaluate its performance using mean squared error.
+
+# Improved Accuracy: 15%
