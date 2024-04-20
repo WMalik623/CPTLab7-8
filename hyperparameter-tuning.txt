@@ -5,3 +5,5 @@
 # In scikit-learn's LinearRegression, we can choose between two types of regularization:
 # Ridge regression (Ridge) and Lasso regression (Lasso).
 # Both Ridge and Lasso have a hyperparameter called alpha, which controls the strength of regularization.
+
+# Accuracy decreased to 8%.
