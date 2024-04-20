@@ -61,3 +61,19 @@ We use PolynomialFeatures to generate polynomial features up to degree 2 from th
 We then scale the polynomial features using StandardScaler to ensure that all features have the same scale.
 Finally, we train a new linear regression model on the polynomial features and evaluate its performance using mean squared error.
 Improved Accuracy: 15%
+
+
+# Hyperparameter Tuning Test
+
+Since this model does not have any hyperparameters, we will focus on one: regularization strength
+Regularization helps prevent overfitting by adding a penalty term to the loss function.
+In scikit-learn's LinearRegression, we can choose between two types of regularization:
+Ridge regression (Ridge) and Lasso regression (Lasso).
+Both Ridge and Lasso have a hyperparameter called alpha, which controls the strength of regularization.
+We define a list of alpha values to try for regularization.
+We create a dictionary param_grid with the hyperparameters we want to tune.
+We use GridSearchCV to perform grid search cross-validation over the specified hyperparameters (alpha values).
+After fitting the grid search object to our data, we retrieve the best hyperparameters.
+Finally, we create a new Ridge regression model with the best alpha value and evaluate its performance.
+This process helps us find the optimal regularization strength for our linear regression model, potentially improving its accuracy.
+Accuracy decreased to 8%.
