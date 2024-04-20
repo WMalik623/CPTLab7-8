@@ -1,0 +1,7 @@
+# Hyperparameter Tuning Test
+
+# Since this model does not have any hyperparameters, we will focus on one: regularization strength
+# Regularization helps prevent overfitting by adding a penalty term to the loss function.
+# In scikit-learn's LinearRegression, we can choose between two types of regularization:
+# Ridge regression (Ridge) and Lasso regression (Lasso).
+# Both Ridge and Lasso have a hyperparameter called alpha, which controls the strength of regularization.
